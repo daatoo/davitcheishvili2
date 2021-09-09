@@ -1,0 +1,1225 @@
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: border-box;
+}
+.ise{
+    width:20px;
+    height:20px;
+    background-color:  #0a0a0a;
+    position: fixed;
+    transform: translateY(4500px);
+    
+
+}
+.fa-facebook-f{
+    margin-top: 80px;
+    margin-left: -20px;
+    position: fixed;
+    font-size: 50px;
+    color: blue;
+    z-index: 4;
+    
+    
+}
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: 0.4s;
+  }
+/*body{
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    height: 3000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transform-style: preserve-3d;
+}*/
+.up{
+    color: red;
+    font-size: 50px;
+    transform:translateY(-1633px);
+    position:fixed;
+    display: inline-block;
+}
+
+
+.ise2{
+    width: 20px;
+    height: 20px;
+    background-color: #0a0a0a;
+    transform: translate(0px, 10px);
+    display: inline-block;
+}
+html {
+    height: 100vh;
+    overflow: hidden;
+   /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.header{
+    background-color: rgb(93, 90, 90); 
+}
+header{
+    
+    z-index: 4;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 3px solid #0a0a0a;
+    align-items: center;
+    justify-content: center;
+}
+.header.dark{
+    background-color: #0a0a0a;
+    border-bottom: 3px solid rgb(253, 33, 33);
+}
+
+/*სქროლი*/
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 12px #e7a412;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color:  #D80F17;
+}
+/*სქროლის დამთავრება*/
+a{
+    text-decoration: none;
+}
+
+.labelO{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 50px;
+    border: 3px solid #0a0a0a;
+    height: 32px;
+    width: 56px;
+    justify-content: space-around;
+    padding: 5px;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    top: 35px;
+    cursor: pointer;
+}
+.checkboxO{
+    opacity: 0;
+    position: absolute;
+    right: 100px;
+    top: 35px;
+    z-index: 2;
+    width: 50px;
+    height: 26px;
+    cursor: pointer;
+}
+.checkboxO:checked ~ .labelO .ball{
+    left: 26px;
+    background-color: red;
+}
+.checkboxO:checked ~ .labelO{
+    background-color: #0a0a0a;
+    border: 3px solid red;
+}
+.body.dark{
+    background-color: #0a0a0a;
+}
+.ball{
+    width: 22px;
+    height: 22px;
+    background-color: #0a0a0a;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: 0.3s ;
+}
+
+.fa-moon{
+    color: red;
+}
+.fa-sun{
+    color: red;
+}
+
+/*აქ გავაკეთე ნავიგაცია*/
+header{
+    height: 100px;
+    
+}
+@media(max-width: 1500px){
+    header{
+        height: 70px;
+    }
+    .light{
+        transform: translate(20px, -15px);
+    }
+    .toggle-button{
+        transform: translate(-10px, 12px);
+    }
+}
+
+
+/*აქამდე ნავიგაცია*/
+/*აქედან რეგისტრაცია ნავიგაციის გვერდით*/
+
+.login{
+    background: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 0px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+} 
+.login0{
+    margin-left: 50px;
+}
+.ulI{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login1{
+    color:red;
+    font-weight: 800;
+}
+
+.login1:hover{
+    color: #ffffff;
+}
+
+.login::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #ff3c3c;
+    z-index: -1;
+    transition: 0.4s;
+}
+.login1::before{
+    bottom: 0;
+    border-radius: 30px 30px 30px 30px;
+}
+@media (max-width:1500px) {
+    .login{
+        display: block;
+    }
+    .zemot{
+        margin-top: 20px;
+    }
+    .login0{
+        margin-left: 0px;
+    }
+    .top{
+        font-size: 18px;
+    }
+    .top:hover:after{
+        width: 80%;
+        margin-left: 20px;
+    }
+    .tpO{
+        top: -100%;
+    }
+    .car{
+        transform: translateY(0px);
+    }
+}
+.login1:hover::before{
+    height: 100%;
+}
+.top{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    padding: 0 5px;
+    color:red;
+    margin-right: 10px;
+}
+
+.top:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c3c;
+    height: 3px;
+    width: 0;
+    bottom: -10px;
+    left: 0px;
+    transition: 0.3s;
+}
+.top:hover{
+    color: #ffffff;
+}
+.top:hover:after{
+    width: 100%;
+}
+.topO{
+    align-items: center;
+    margin-left: 0px;
+    transform: translateY(-70px);
+    width: 1200px;
+    display: inline-block;
+    margin: auto;
+
+}
+.car{
+    display: inline-block;
+    height: 100px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+@media (max-width:1500px) {
+    .top{
+        display: block;
+
+    }
+    .topO{
+        width: 100%;
+    }
+    .car{
+        height: 65px;
+    }
+    
+    
+    
+    
+}
+
+
+
+/*აქ დამთავრდა რეგისტრაცია ნავიგაციაში*/
+
+/*აქედან იწყება მეორე ნავიგაცია*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: crimson;
+}
+
+/*
+.toggle-Button{
+    position: absolute;
+    top: .75rem;
+    right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    z-index: 11;
+}
+.toggle-Button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(220, 0, 0);
+    border-radius: 10px;
+}*/
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    z-index: 11;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/*
+.body{
+    transition: .4s linear;
+}
+.header.active{
+    background-color: white;
+}
+.body.active{
+    background-color: white;
+}
+.toggle-Button .bar.active{
+    background-color: rgb(121, 65, 65);
+}*/
+
+@media(max-width: 1500px){
+    .toggle-button{
+        display: flex;
+    }
+    .topO{
+        display: block;
+        transform: translateY(-500px);
+        float: right;
+        width: 200px;
+        height: 430px;
+        background-color: rgb(24, 22, 22);
+        transition: 0.5s;
+
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .topO.active{
+        background-color: rgb(24, 22, 22);
+        box-shadow: -5px 5px 5px red;
+        float: right;
+        width: 200px;
+        height: 430px;
+        transform: translateY( 0px);
+    }
+}
+/*ლოგო*/
+
+
+@media (max-width: 1900px){
+    .car{
+        margin-left: 30px;
+
+    }
+}
+.carousel {
+    overflow: hidden;
+    background-color: rgb(139, 184, 236);
+    position: relative;
+    top: 100px;
+    height: 700px;
+    width: 95%;
+  }
+  
+  .carousel .carousel__item,
+  .carousel .carousel__item--hidden {
+    display: none;
+    
+  }
+  .carousel h2{
+      width: 60%;
+  }
+  .carousel p{
+      width: 60%;
+  }
+  .carousel .carousel__item img {
+    width: 60%;
+    margin-top: 40px;
+    height: 500px;
+  }
+  @media (max-width:1000px){
+    .carousel .carousel__item img{
+        height: 250px;
+        margin-top: 10px;
+        width: 80%;
+    }
+    .carousel{
+        height: 350px;
+    }
+    .carousel h2{
+        font-size: 15px;
+    }
+    .carousel p{
+        font-size: 13px;
+    }
+  }
+  @media (max-width: 600px){
+      .carousel .carousel__item img{
+          height: 150px;
+      }
+  }
+  .carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+  }
+  
+  .carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel .carousel__actions button {
+    border-radius: 50%;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 84px;
+    height: 84px;
+    background-color: rgb(139, 184, 236);;
+  }
+  
+  .carousel .carousel__actions button#carousel__button--prev {
+    margin-left: 20px;
+    font-size: 80px;
+  }
+  
+  .carousel .carousel__actions button#carousel__button--next {
+    margin-right: 20px;
+    font-size: 80px;
+    
+  }
+  @media (max-width: 1000px){
+    .carousel .carousel__actions button#carousel__button--prev{
+        font-size: 30px;
+        margin-left: 5px;
+    }
+    .carousel .carousel__actions button#carousel__button--next{
+        font-size: 30px;
+        margin-right: 5px;
+    }
+    .carousel .carousel__actions button{
+        width: 30px;
+        height: 30px;
+    }
+    .carousel .meti{
+        width: 60px;
+        height: 30px;
+    }
+    .carousel .btn{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+  }
+  @keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
+  .bugati2{
+      width: 1800px;
+      height: 500px;
+  }
+/*mtavrdeba karuseli*/
+/*საიტის წარმოდგენა*/
+.auto{
+    color: #c69a39;
+}
+.euro{
+   color: #D80F17;
+}
+.euro{
+    font-size: 60px;
+}
+.auto{
+    font-size: 30px;
+}
+@media (max-width: 628px) {
+    .euro{
+        font-size: 30px;
+    }
+    .auto{
+        font-size: 15px;
+    }
+}
+.euroO{
+    width: 628px;
+}
+@media (max-width: 590px) {
+    .euroO{
+        width: 90%;
+    }
+}
+.showO{
+    width: 600px;
+    height: 700px;
+    display: inline-block;
+    margin-top: 80px;
+}
+.show{
+    width: 100%;
+    height: 700px;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.yes{
+    color: red;
+    display:inline-block;
+}
+.yes1, .yes2{
+    display:inline-block;
+    color: red;
+}
+.moneycar{
+    display: inline-block;
+    transform: translate(00px, 0px);
+}
+@media (max-width: 782px) {
+    .moneycar{
+        width: 90%;
+        transform: translateY(-400px);
+    }
+    .showO{
+        transform: translateY(-100px);
+    }
+}
+.moreO{
+    transform: translate(0px, 70px);
+    display: inline-block;
+}
+.more{
+    background: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.more{
+    color: #0a0a0a;
+}
+.more.dark{
+    color: white;
+}
+.more::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ff3c3c;
+    z-index: -1;
+    transition: 0.4s;
+}
+.more::before{
+    bottom: 0;
+    border-radius: 30px 30px 30px 30px;
+}
+.more:hover::before{
+    height: 100%;
+}
+.euroO{
+    box-sizing: border-box;
+}
+@media (max-width: 700px) {
+    .showO{
+        width: 90%;
+    }
+}
+.euroO{
+    box-sizing: border-box;
+}
+/*საიტის წარმოდგენის ბოლო*/
+/**/
+.wrapperO{
+    transform: translateY(200px);
+}
+@media (max-width: 782px){
+    .wrapperO{
+        transform: translateY(-70px);
+    }
+}
+.bugati{
+    width: 400px;
+    height: 600px;
+   
+}
+.servisebitext{
+    font-size: 60px;
+    
+    margin: 30px;
+    display: inline-block;
+    color: #0a0a0a;
+}
+.servisebitext.dark{
+    color: white;
+}
+.bugati::after{
+    background-image:linear-gradient(to bottom, yellow, green); 
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    transform: translate(0px, 200px);
+}
+@media (max-width:1132px) {
+    .wrapper{
+        display: block;
+        
+    }
+    .card{
+        margin-bottom: 50px;
+    }
+}
+.card{
+    width: 300px;
+    height: 400px;
+    padding: 2rem 1rem;
+    background: burlywood;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 5px 8px red;
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    transform: translateY(20px);
+    z-index: 0;
+}
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(255, 179, 0), rgb(207, 37, 14));
+    z-index: 2;
+    transform: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: .5;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .info{
+    position: relative;
+    z-index: 3;
+    color:rgb(255, 255, 255);
+    opacity: 0;
+    transform: translateY(30px);
+    transform: 0.5s all;
+}
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.btn{
+    text-decoration: none;
+    color:cornsilk;
+    font-size: 30px;
+    margin-left: 15px;
+}
+.meti{
+    width: 100px;
+    height: 40px;
+    background-color: darkorange;
+    border-radius: 10px;
+}
+.meti:hover{
+    background-color: darksalmon;
+}
+.card1O{
+    transform: translate(0px, 400px);
+    
+}
+.card1{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform: translate(0px, 600px);
+}
+@media(max-width: 1000px) {
+    
+    .card1{
+        transform: translateY(100px);
+
+    }
+}
+.card1 .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 2s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+
+}
+.card1{
+    display: inline-block;
+    margin: 20px;
+}
+.face{
+    border-radius: 20px;
+}
+.card1 .face.front{
+    background: #ff0;
+}
+.card1:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+
+}
+.card1 .face.back{
+    background: #3bc2ff;
+    color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+}
+.card1:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
+
+}
+ .card1 .face .zet{
+    transform: perspective(500px) translatez(20px);
+    font-size: 40px;
+}
+.card1 .face .nissan{
+    transform: perspective(500px) translatez(20px);
+    font-size: 40px;
+}
+.card1 .face .zet1{
+    transform: perspective(500px) translatez(20px);
+    font-size: 15px;
+}
+.card1 .face .buymore{
+    transform: perspective(500px) translatez(20px);
+    font-size: 20px;
+}
+.zet{
+    margin-left: 20px;
+    margin-top: 60px;
+}
+.zet1{
+    margin-left: 5px;
+}
+.buymore{
+    margin-top: 10px;
+    background-color: gold;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+}
+.nissan{
+    width: 250px;
+    height: 180px;
+}
+.bestseller{
+    font-size: 50px;
+    color: #0a0a0a;
+    transform: translate(0px, 400px);
+    display: inline-block;
+    font-weight: 800;
+}
+.bestseller.dark{
+    color: white;
+}
+@media(max-width: 600px){
+    .bestseller{
+        font-size: 30px;
+        transform: translateY(0px);
+    }
+}
+.morecarO{
+    transform: translate(840px, 1100px);
+    display: inline-block;
+}
+.morecar{
+    background: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: "montserrat";
+    cursor: pointer;
+    font-weight: 800;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.morecar{
+    color: #0a0a0a;
+}
+.morecar.dark{
+    color: #ffffff
+}
+.morecar::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ff3c3c;
+    z-index: -1;
+    transition: 0.4s;
+}
+.morecar::before{
+    bottom: 0;
+    border-radius: 30px 30px 30px 30px;
+}
+.morecar:hover::before{
+    height: 100%;
+}
+/*აქ დამთავრდა მანქანების ბესთსელერი*/
+.siaxleebiO{
+    transform:translate(0px, 1700px);
+}
+.siaxleebi1{
+    width: 400px;
+    height: 700px;
+    border: 3px solid #D80F17;
+    display: inline-block;
+    margin: 10px;
+    background-color:  #c69a39;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px red;
+} 
+@media(max-width: 800px){
+    .siaxleebi1{
+        transform: translateY(-900px);
+    }
+}
+.merstext{
+    color: white;
+    font-size: 40px;
+}
+.dato{
+    font-size: 20px;
+    color: white;
+}
+.mersedes{
+    width: 380px;
+    margin-left: 10px;
+}
+@media (max-width: 700px) {
+    .siaxleebi1{
+        width: 300px;
+        height: 500px;
+    }
+
+}
+@media (max-width: 700px) {
+    .merstext{
+        font-size: 20px;
+    }
+}
+@media (max-width: 700px) {
+    
+    .dato{
+        font-size: 13px;
+    }
+    
+}
+@media (max-width: 700px) {
+    .mersedes{
+        width: 280px;
+    }
+}
+
+
+.siaxleebi5{
+    transform: translate(0px, 1600px);
+    font-size: 30px;
+    color: #0a0a0a;
+    display: inline-block;
+}
+.siaxleebi5.dark{
+    color: white;
+}
+@media(max-width: 800px){
+    .siaxleebi5{
+        transform: translateY(740px);
+    }
+}
+
+#4645{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    transform: translate(0px, -300px);
+}
+/*aqedan iwyeba form*/
+.form{
+    transform: translate(0px, 2000px);
+}
+@media(max-width: 1000px){
+    .form{
+        transform: translateY(1050px);
+    }
+}
+.shesvla{
+    font-size: 40px;
+    color: #0a0a0a;
+}
+.shesvla.dark{
+    color: white;
+}
+@media (max-width: 700px) {
+    .shesvla{
+        font-size: 25px;
+    }
+}
+.asi{
+    display: inline-block;
+    transform: translate(0px, -80px);
+}
+.box{
+    width:800px;
+    height: 600px;
+    padding-top: 100px;
+    transform: translate(0px, 0px);
+    background: #191919;
+    text-align: center;
+    border-radius: 30px;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "text"], .box input[type ="password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #db8d34;
+    padding: 15px 30px;
+    width: 300px;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.box input[type = "text"]:focus, .box input[type ="password"]:focus{
+    width: 390px;
+    border-color: #cc2e2e;
+}
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #db7827;
+    padding: 15px 50px;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.box input[type = "submit"]:hover{ 
+    background-color: #cc2e2e;  
+}
+
+@media (max-width: 800px) {
+    .box{
+        width: 90%;
+    }
+    .box input[type = "text"], .box input[type ="password"]{
+        width: 200px;
+    }
+    .box input[type = "text"]:focus, .box input[type ="password"]:focus{
+        width: 250px;
+    }
+}
+.or{
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.kont{
+    color: #0a0a0a;
+    font-size: 30px;
+    
+}
+.kont.dark{
+    color: white;
+}
+.tel{
+    color: #0a0a0a;
+    font-size: 20px;
+}
+.tel.dark{
+    color: white;
+}
+.tel1{
+    color: #0a0a0a;
+    font-size: 20px;
+}
+.tel1.dark{
+    color: white;
+}
+.kontO{
+    display: inline-block;
+    transform: translate(0px, 3000px);
+    
+}
+.map{
+    display: inline-block;
+    border: 3px solid red;
+}
+ul{
+    display: inline-block;
+    margin-right: 30px;
+}
+.linksO{
+    color: #0a0a0a;
+    font-size: 35px;
+    list-style: none;
+    cursor: pointer;
+}
+.linksO.dark{
+    color: white;
+}
+.linksO1.dark{
+    color: white;
+}
+.links{
+    color: #0a0a0a;
+    font-size: 25px;
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+.links1.dark{
+    color: white;
+}
+.links2.dark{
+    color: white;
+}
+.links3.dark{
+    color: white;
+}
+.links4.dark{
+    color: white;
+}
+.links5.dark{
+    color: white;
+}
+.links6.dark{
+    color: white;
+}
+.links7.dark{
+    color: white;
+}
+.links8.dark{
+    color: white;
+}
+.links9.dark{
+    color: white;
+}
+.links10.dark{
+    color: white;
+}
+.links11.dark{
+    color: white;
+}
+.links12.dark{
+    color: white;
+}
+.links:hover, .linksO:hover{
+    color:rgb(255, 115, 0)
+}
+.logo2{
+    width: 150px;
+    transform: translate(1100px, -400px);
+}
+.linksOO{
+    transform: translate(0px, 400px);
+}
+
+.paymenttext{
+    font-size: 24px;
+    color: white;
+}
+.payment{
+    display: inline-block;
+    transform: translate(0px, 2600px);
+}
+.american{
+    transform: translateY(8px);
+}
+.american, .visa, .master{
+    padding-right: 20px;
+}
+.kt{
+    font-size: 30px;
+    color: #0a0a0a;
+    opacity: 0;
+}
+.ktO{
+    transform: translateY(2800px);
+}
+@media(max-width: 800px) {
+ .payment{
+     margin-top: 50px;
+ }
+}
+@media (max-width: 720px) {
+    .map{
+        width: 100%;
+        height: 300px;
+    }
+
+}
+@media(max-width: 1000px){
+    .linksOOO{
+        transform: translateY(400px);
+    }
+    .linksOOOO{
+        transform: translateY(430px);
+    }
+    .paylast{
+        transform: translateY(350px);
+    }
+    .kontO{
+        transform: translateY(1300px);
+    }
+    .payment{
+        transform: translateY(900px);
+    }
+}
